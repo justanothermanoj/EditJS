@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="full_width full_height">
+<head>
+	<title> Termitext </title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body class="full_width full_height">
+
+<div id="Main_Window" class="container-fluid full_height full_width">
+	<div class="row full_height">
+		<div id="output" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 window full_height">
+		</div>
+		<div id="editor" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 window full_height">
+			<textarea id="editor_input" class="full_height full_width strip" placeholder="Write Your Javascript Here"></textarea>
+			<button id="main_btn" class="hidden" onclick="main()"> Run </button>
+			<button id="run_btn" class="btn btn-success" onclick="run()"> Run </button>
+		</div>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/TT.js"></script>
+</html>
