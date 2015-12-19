@@ -1,4 +1,42 @@
 // Termitext version 0.0.1
+
+$('textarea').textcomplete([{
+    match: /(^|\b)(\w{2,})$/,
+    search: function (term, callback) {
+        var words = [
+            'for',
+            'console',
+            'alert',
+            'output',
+            'clear',
+            'document',
+            'createElement',
+            'function',
+            'var',
+            'log',
+            'appendChild',
+            'getElementById',
+            'window',
+            'innerHTML',
+            'Array',
+            'addEventListener',
+            'Attr',
+            'Boolean',
+            'break',
+            'callback',
+            'case',
+            'localStorage',
+            'location'
+        ];
+        callback($.map(words, function (word) {
+            return word.indexOf(term) === 0 ? word : null;
+        }));
+    },
+    replace: function (word) {
+        return word;
+    }
+}]);
+
 function output(data) {
     document.querySelector("#output").innerHTML += "<p>" + data + "</p>"
 }
@@ -31,8 +69,7 @@ function run(func) {
 }
 
 var base = window.console.log;
-window.console.log = function(message) {
+window.console.log = function (message) {
     output(message);
     return base.apply(this, arguments);
 };
-
