@@ -32,7 +32,7 @@ snippets = {
     'for': "for (var i = 0; i < array.length; i++)  {\n\tarray[i];\n}",
     'function': "function function_name(args)  {\n\toutput('Hello ! I am manoj');\n}",
     'console.log': "console.log('manoj');",
-    'array': "[item1, item2, item3];"
+    'array': "['item1', 'item2', 'item3'];"
 }
 
 // converting snippets keyword to array for textcomplete processing
