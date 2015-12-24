@@ -21,12 +21,21 @@
     });
 })();
 
+
+/* ---- add own snippets ----
+
+just add another object property in the snippets 'You snippet keyword' : "Your snippet code"
+
+*/
+
 snippets = {
-    'for': "for (var i = 0; i < array.length; i++)\n{\n\tarray[i]\n};",
-    'function': "function function_name(args)\n{\n\toutput('Manoj is awesome')\n}",
-    'console.log': "console.log(value)",
+    'for': "for (var i = 0; i < array.length; i++)  {\n\tarray[i];\n}",
+    'function': "function function_name(args)  {\n\toutput('Hello ! I am manoj');\n}",
+    'console.log': "console.log('manoj');",
+    'array': "[item1, item2, item3];"
 }
 
+// converting snippets keyword to array for textcomplete processing
 function identifiers() {
     var array = [];
 
@@ -87,7 +96,30 @@ $('textarea').textcomplete([{
             'button',
             'img',
             'id',
-            'className'
+            'className',
+            'catch',
+            'continue',
+            'default',
+            'delete',
+            'do',
+            'else',
+            'for',
+            'function',
+            'if',
+            'in',
+            'instanceof',
+            'new',
+            'return',
+            'switch',
+            'this',
+            'throw',
+            'try',
+            'typeof',
+            'void',
+            'while',
+            'const',
+            'width',
+            'height'
         ];
         callback($.map(words, function(word) {
             return word.indexOf(term) === 0 ? word : null;
