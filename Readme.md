@@ -1,7 +1,7 @@
 EditJs
 =========
 
-A Simple Javascript Editor with some Extra features.
+A Simple online Javascript Editor with some Extra features.
 
 
 Usage
@@ -16,6 +16,16 @@ You can use Pre-included snippets by just typing `:` and autocomplete will popup
 
 ![Autocomplete Editjs](http://manojsinghnegi.com/projects/EditJs/img/autocomplete_EditJs_manojsinghnegi.png)
 
+## Add Snippets
+
+Add your snippet to main snippets variable.
+
+~~~ js
+snippets = {
+    'Your snippet Keyword': "Your snippet code"
+}
+~~~
+
 
 Features
 -----
@@ -29,6 +39,6 @@ Thanks
 
 **EditJs** © 2015-2016, Manoj Singh Negi
 
-> [manojsinghnegi.com](http://manojsinghnegi.com) &nbsp;&middot;&nbsp;
+> [Manoj Singh Negi](http://manojsinghnegi.com) &nbsp;&middot;&nbsp;
 > GitHub [@justanothermanoj](https://github.com/justanothermanoj) &nbsp;&middot;&nbsp;
 > Twitter [@justanothermano](https://twitter.com/justanothermano)
