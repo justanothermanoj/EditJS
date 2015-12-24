@@ -1,19 +1,23 @@
 /* Sample */
 
 .dropdown-menu {
-    border: 1px solid #ddd;
     background-color: white;
+    box-shadow: none;
+    border: none;
 }
 
 .dropdown-menu li {
-    border-top: 1px solid #ddd;
     padding: 2px 5px;
-    color: #2c3e50;
+    color: white;
+}
+
+.dropdown-menu li a {
+    color: white;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-    color: #2c3e50;
-    background-color: white;
+    color: white;
+    background-color: #5cb85c;
 }
 
 .dropdown-menu li:first-child {
@@ -32,8 +36,15 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: #2C3E50;
 }
 
 .dropdown-menu a:hover {
     cursor: pointer;
 }
+
+.dropdown-menu li:hover, .dropdown-menu .active {
+    background-color: transparent;
+}
+
+
