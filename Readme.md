@@ -14,6 +14,8 @@ Go to http://manojsinghnegi.com/projects/EditJs , and start writing js
 
 You can use Pre-included snippets by just typing `:` and autocomplete will popup
 
+![Autocomplete Editjs](http://manojsinghnegi.com/projects/EditJs/img/autocomplete_EditJs_manojsinghnegi.png)
+
 
 Features
 -----
