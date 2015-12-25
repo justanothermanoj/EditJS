@@ -8,6 +8,15 @@ textarea {
     color: white;
 }
 
+a {
+    color: #5CB85C;
+}
+
+a:hover,a:active,a:focus {
+    color: #5CB85C;
+    text-decoration: none;
+}
+
 .full_width {
     width: 100%;
 }
