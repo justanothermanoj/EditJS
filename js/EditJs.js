@@ -32,7 +32,8 @@ snippets = {
     'for': "for (var i = 0; i < array.length; i++)  {\n\tarray[i];\n}",
     'function': "function function_name(args)  {\n\toutput('Hello ! I am manoj');\n}",
     'console.log': "console.log('manoj');",
-    'array': "['item1', 'item2', 'item3'];"
+    'array': "['item1', 'item2', 'item3'];",
+    'while': "while (condition) {\n// your code\n}"
 }
 
 // converting snippets keyword to array for textcomplete processing
@@ -119,7 +120,13 @@ $('textarea').textcomplete([{
             'while',
             'const',
             'width',
-            'height'
+            'height',
+            'true',
+            'false',
+            'undefined',
+            'prototype',
+            'resize',
+            'splice'
         ];
         callback($.map(words, function(word) {
             return word.indexOf(term) === 0 ? word : null;
@@ -161,8 +168,9 @@ function run(func) {
 
 }
 
-var base = window.console.log;
+var console_log = window.console.log;
+
 window.console.log = function(message) {
     output(message);
-    return base.apply(this, arguments);
+    return console_log.apply(this, arguments);
 };
