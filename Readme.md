@@ -26,6 +26,17 @@ snippets = {
 }
 ~~~
 
+Built in Functions
+---------
+
+## Clear()
+
+This will clear the output screen include it in code and will clear the output screen
+
+## Output(value)
+
+Smiliar to `console.log(value)` it `Output(value)` will output the value provided
+
 
 Features
 -----
